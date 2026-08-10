@@ -10,25 +10,25 @@
 ## 👥 Autores & Contexto
 
 > [!NOTE]
-> **Trabalho Prático** desenvolvido para a disciplina de **Fundamentos de Ciência de Dados**[cite: 1].
-> * **Henrique Chiabai da Silva**[cite: 1]
-> * **Adryann Henrique Oliveira Olivatti**[cite: 1]
+> **Trabalho Prático** desenvolvido para a disciplina de **Fundamentos de Ciência de Dados**.
+> * **Henrique Chiabai da Silva**
+> * **Adryann Henrique Oliveira Olivatti**
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-Analisar a relação entre o comportamento digital (uso de redes sociais e tempo de tela), estilo de vida (sono e exercícios) e os níveis de estresse, ansiedade e depressão em adolescentes[cite: 1].
+Analisar a relação entre o comportamento digital (uso de redes sociais e tempo de tela), estilo de vida (sono e exercícios) e os níveis de estresse, ansiedade e depressão em adolescentes.
 
-* **Dataset:** [Teenager Mental Health Dataset (Kaggle)](https://www.kaggle.com/datasets/itszubi/impact-of-social-media-on-teens-mental-health)[cite: 1]
-* **Amostra:** 1.200 registros de jovens entre 13 e 19 anos (0% de dados nulos)[cite: 1].
+* **Dataset:** [Teenager Mental Health Dataset (Kaggle)](https://www.kaggle.com/datasets/itszubi/impact-of-social-media-on-teens-mental-health)
+* **Amostra:** 1.200 registros de jovens entre 13 e 19 anos (0% de dados nulos).
 
 ---
 
 ## 🛠️ Engenharia de Dados (Feature Engineering)
 
-Para enriquecer a análise, foi criada a variável categórica derivativa[cite: 1]:
-* **`physical_activity_label`**: Classifica se o jovem atinge a recomendação da OMS de pelo menos **30 minutos diários** (0.5h) de exercícios físicos (`Sim` / `Não`)[cite: 1].
+Para enriquecer a análise, foi criada a variável categórica derivativa:
+* **`physical_activity_label`**: Classifica se o jovem atinge a recomendação da OMS de pelo menos **30 minutos diários** (0.5h) de exercícios físicos (`Sim` / `Não`).
 
 ---
 
@@ -36,18 +36,18 @@ Para enriquecer a análise, foi criada a variável categórica derivativa[cite: 
 
 | # | Pergunta Investigada | Técnica Visual | Resultado / Achado |
 | :-: | :--- | :-: | :--- |
-| **1** | **Redes sociais causam estresse/ansiedade?**[cite: 1] | `sns.regplot`[cite: 1] | ⚪ **Sem relação direta:** A linha de tendência é neutra. Horas brutas de tela não indicam variação direta de estresse[cite: 1]. |
-| **2** | **Como a depressão afeta estresse e ansiedade?**[cite: 1] | `sns.kdeplot`[cite: 1] | 🔴 **Forte sobreposição:** Adolescentes com depressão concentram-se no patamar mais elevado de ansiedade e estresse simultâneos[cite: 1]. |
-| **3** | **Jovens com depressão usam mais redes sociais?**[cite: 1] | `sns.boxplot`[cite: 1] | 📈 **Sim:** A mediana de horas diárias em redes sociais do grupo com depressão é significativamente maior e mais compacta no topo[cite: 1]. |
-| **4** | **Interação social presencial reduz o vício digital?**[cite: 1] | `sns.barplot`[cite: 1] | ⚖️ **Sem impacto:** Níveis médios de vício permanecem praticamente equivalentes independente da interação social[cite: 1]. |
-| **5** | **Adolescentes com depressão dormem menos?**[cite: 1] | `sns.violinplot`[cite: 1] | 📉 **Sim:** A distribuição de horas de sono do grupo com indicativo depressivo é achatada e deslocada para baixo[cite: 1]. |
-| **6** | **Atividade física diária reduz estresse e ansiedade?**[cite: 1] | `sns.boxplot`[cite: 1] | ❓ **Resultado Inesperado:** Não foi observada alteração estatística expressiva entre quem pratica ou não o tempo mínimo de exercícios[cite: 1]. |
+| **1** | **Redes sociais causam estresse/ansiedade?** | `sns.regplot` | ⚪ **Sem relação direta:** A linha de tendência é neutra. Horas brutas de tela não indicam variação direta de estresse. |
+| **2** | **Como a depressão afeta estresse e ansiedade?** | `sns.kdeplot` | 🔴 **Forte sobreposição:** Adolescentes com depressão concentram-se no patamar mais elevado de ansiedade e estresse simultâneos. |
+| **3** | **Jovens com depressão usam mais redes sociais?** | `sns.boxplot` | 📈 **Sim:** A mediana de horas diárias em redes sociais do grupo com depressão é significativamente maior e mais compacta no topo. |
+| **4** | **Interação social presencial reduz o vício digital?** | `sns.barplot` | ⚖️ **Sem impacto:** Níveis médios de vício permanecem praticamente equivalentes independente da interação social. |
+| **5** | **Adolescentes com depressão dormem menos?** | `sns.violinplot` | 📉 **Sim:** A distribuição de horas de sono do grupo com indicativo depressivo é achatada e deslocada para baixo. |
+| **6** | **Atividade física diária reduz estresse e ansiedade?** | `sns.boxplot` | ❓ **Resultado Inesperado:** Não foi observada alteração estatística expressiva entre quem pratica ou não o tempo mínimo de exercícios. |
 
 ---
 
 ## 💡 Principais Conclusões
 
 > [!IMPORTANT]
-> * **Tempo de Tela vs. Saúde Mental:** O tempo bruto gasto em redes sociais isoladamente não explica quadros de estresse ou ansiedade, sugerindo que o **padrão de uso e conteúdo** consumido podem ter peso maior do que as horas nominais[cite: 1].
-> * **Perfil de Risco:** Quadros depressivos aparecem fortemente correlacionados ao efeito combinado de **alto estresse, alta ansiedade, privação de sono e elevado tempo em redes sociais**[cite: 1].
-> * **Aplicação de IA:** Os dados e correlações mapeadas nesta análise exploratória servem de base para o treinamento de modelos de **Machine Learning** voltados à identificação e triagem precoce de riscos psicológicos em jovens[cite: 1].
+> * **Tempo de Tela vs. Saúde Mental:** O tempo bruto gasto em redes sociais isoladamente não explica quadros de estresse ou ansiedade, sugerindo que o **padrão de uso e conteúdo** consumido podem ter peso maior do que as horas nominais.
+> * **Perfil de Risco:** Quadros depressivos aparecem fortemente correlacionados ao efeito combinado de **alto estresse, alta ansiedade, privação de sono e elevado tempo em redes sociais**.
+> * **Aplicação de IA:** Os dados e correlações mapeadas nesta análise exploratória servem de base para o treinamento de modelos de **Machine Learning** voltados à identificação e triagem precoce de riscos psicológicos em jovens.
